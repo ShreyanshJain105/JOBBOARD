@@ -92,21 +92,19 @@ Maven (for backend)
 2. Backend Setup
    Clone the repository:
 
-bash
-Copy
-git clone https://github.com/your-username/job-board.git
+
+git clone https://github.com/ShreyanshJain105/job-board.git
 cd job-board/backend
 Configure MongoDB:
 
 Update the application.properties file with your MongoDB connection string:
 
 properties
-Copy
+
 spring.data.mongodb.uri=mongodb+srv://<username>:<password>@cluster0.mongodb.net/jobboard
 Build and run the backend:
 
-bash
-Copy
+
 mvn clean install
 mvn spring-boot:run
 The backend will be running at http://localhost:8080.
@@ -114,18 +112,14 @@ The backend will be running at http://localhost:8080.
 3. Frontend Setup
    Navigate to the frontend directory:
 
-bash
-Copy
+
 cd ../frontend
 Install dependencies:
 
-bash
-Copy
+
 npm install
 Start the development server:
 
-bash
-Copy
 npm start
 The frontend will be running at http://localhost:3000.
 
@@ -137,21 +131,19 @@ Create a database named jobboard and a collection named jobs.
 API Documentation
 The backend APIs are documented using Swagger. After running the backend, access the Swagger UI at:
 
-Copy
+
 http://localhost:8080/swagger-ui.html
 Deployment
 Frontend
 Build the React app:
 
-bash
-Copy
+
 npm run build
 Deploy to Vercel or Netlify:
 
 Vercel:
 
-bash
-Copy
+
 npm install -g vercel
 vercel
 Netlify:
@@ -163,8 +155,7 @@ Deploy to Heroku:
 
 Create a Heroku app and push the backend code:
 
-bash
-Copy
+
 heroku create
 git push heroku main
 Deploy to AWS Elastic Beanstalk:
@@ -181,18 +172,15 @@ Fork the repository.
 
 Create a new branch:
 
-bash
-Copy
+
 git checkout -b feature/your-feature-name
 Commit your changes:
 
-bash
-Copy
+
 git commit -m "Add your feature"
 Push to the branch:
 
-bash
-Copy
+
 git push origin feature/your-feature-name
 Open a pull request.
 
